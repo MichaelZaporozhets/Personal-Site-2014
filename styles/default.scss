@@ -34,7 +34,6 @@ header { background: $scheme; position: relative; z-index: 3; top:-100px; @inclu
 	}
 }
 
-
 section.page { @include Transition(1s); z-index: 1; opacity: 0; height: 0px; position: absolute; width: 960px; left:50%; margin-left: -480px;
 	&.current { z-index: 2; opacity: 1; display:block; height: auto; }
 
@@ -47,7 +46,6 @@ section.page { @include Transition(1s); z-index: 1; opacity: 0; height: 0px; pos
 		p { font-size: 16px;line-height: 32px; max-width: 600px; display:block; margin-bottom: 30px; letter-spacing: 1px;}
 	}
 }
-
 
 section.page#home { padding-left: 20px;
 	.triangle { top: -500px; margin-left: -102px; position: absolute !important; }
@@ -62,6 +60,10 @@ section.page#home { padding-left: 20px;
 			span.emph_i { font-style: italic; }
 		}
 	}
+}
+
+section.page#blog_post {
+	.main { top: -100px; }
 }
 
 body.mobile {
